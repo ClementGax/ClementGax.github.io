@@ -10075,14 +10075,15 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #111;
   background-attachment: scroll;
   background-size: cover;
 }
 header.masthead h1 {
   font-size: 2.25rem;
+}
+header.masthead p {
+  color: #fff;
 }
 @media (min-width: 992px) {
   header.masthead {
@@ -10142,4 +10143,26 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.line-1{
+  width: 14em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  white-space: nowrap;
+  overflow: hidden; 
+}
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 3s steps(44) 1s 1 normal both,
+           blinkTextCursor 800ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 14em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
 }
