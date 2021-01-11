@@ -31,7 +31,7 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #111;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -60,7 +60,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -10001,7 +10001,6 @@ hr.light {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
   font-weight: 700;
-  text-transform: uppercase;
   border: none;
   border-radius: 10rem;
 }
@@ -10093,7 +10092,7 @@ header.masthead p {
     padding-bottom: 0;
   }
   header.masthead p {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
   }
   header.masthead h1 {
     font-size: 3rem;
@@ -10129,13 +10128,13 @@ header.masthead p {
   text-align: center;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.85rem;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
+  font-size: 0.85rem;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
@@ -10146,7 +10145,7 @@ header.masthead p {
 }
 
 .line-1{
-  width: 14em;
+  width: 14.5em;
   margin: 0 auto;
   border-right: 2px solid rgba(255,255,255,.75);
   white-space: nowrap;
@@ -10155,24 +10154,52 @@ header.masthead p {
 
 /* Animation */
 .anim-typewriter{
-animation: typewriter 3s steps(44) 1s 1 normal both,
+animation: typewriter 2s steps(44) 1s 1 normal both,
            blinkTextCursor 800ms steps(44) infinite normal;
 }
 @keyframes typewriter{
 from{width: 0;}
-to{width: 14em;}
+to{width: 12.5em;}
 }
 @keyframes blinkTextCursor{
 from{border-right-color: rgba(255,255,255,.75);}
 to{border-right-color: transparent;}
 }
 
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+             blinkTextCursor 800ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+  from{width: 0;}
+  to{width: 12.5em;}
+  }
+  @keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+  }
+  
 .map iframe {
   height: 500px;
   width: 100%;
   border: none;
 }
 
-#contact {
-  padding-bottom: 0;
+#services {
+  background-color: #111;
+}
+
+#services {
+  padding-bottom: 1.5rem;
+}
+
+#services .divider {
+  margin-bottom: 0 !important;
+}
+
+#portfolio {
+  padding-bottom: 8rem;
+  background-color: #111;
 }
