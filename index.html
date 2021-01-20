@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clément GAXOTTE</title>
+    <link rel="icon" href="assets/code.svg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <script src="https://kit.fontawesome.com/7cdbbef35c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="nav">
+      <div>
+        <a class="nav__logo" href="#">cg.</a>
+      </div>
+      <div class="nav__links">
+        <a class="nav__links__link" href="#about">A propos</a>
+        <a class="nav__links__link" href="#portfolio">Portfolio</a>
+        <a class="nav__links__link" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <h1 class="header__title">Clément GAXOTTE</h1>
+      <h2 class="header__subtitle">Développeur web frontend</h2>
+    </header>
+
+    <!-- ABOUT -->
+    <div class="category">
+      <h3 id="about" class="category__title"><span class=category__title__background>A propos</span></h3>
+      <div class="about">
+        <div class="about__description">
+          <p class="about__description__text">Bonjour ! Je suis Clément, un jeune développeur web basé dans le Grand-Est.
+            <br/><br/>
+            Après une carrière dans le domaine assurantiel, j'ai effectué une reconversion professionnelle dans le développement web pour suivre mes rêves.
+            <br/><br/>
+            Pour réussir ce pari osé, j’ai suivi la formation proposée par l’école <a class="oclock" href="https://oclock.io/">O’Clock</a> (labelisée grande école du numérique). Dorénavant je recherche une opportunité afin de finaliser ce beau projet.
+            <br/><br/>
+            En 2021 c'est décidé, je deviens Développeur web !</p>
+        </div>
+        <div class="about__photo">
+          <img src="assets/profil.jpg" alt="" />
+        </div>
+      </div>
+      <div class="about__link">
+        <a href="assets/Clement_GAXOTTE_CV.pdf" target="_blank"><button class="about__link__button" type="button">Télécharger mon CV</button></a>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div class="category">
+      <h3 id="portfolio" class="category__title"><span class=category__title__background>Portfolio</span></h3>
+      <div class="portfolio">
+        <div class="container">
+          <div class="container__image">
+            <a href="https://youtu.be/Gbczg095K_A?t=3068" target="_blank"><img src="assets/wishingwell.png" alt="" /></a>
+          </div>
+          <div class="container__description">
+            <h4 class="container__description__title">Wishing well</h4>
+            <p class="container__description__text">Application web permettant de créer des listes de souhaits pour différents événements. Projet de fin de formation réalisé en 4 semaines par une équipe de 5 développeurs.<br/><br/><a class="container__description__text__link" href="https://youtu.be/Gbczg095K_A?t=3068" target="_blank">Vidéo de présentation du projet</a>
+            </p>
+            <div class="container__description__tags">
+              <span>React</span>
+              <span>Redux</span>
+              <span>Symfony</span>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="containerReverse__description">
+            <h4 class="container__description__title">Convertisseur</h4>
+            <p class="containerReverse__description__text">Application web permettant de convertir des euros dans plusieurs monnaies. Utilisation d'une API pour récupérer le cours réel des différentes devises.</p>
+            <div class="container__description__tags">
+              <span>React</span>
+              <span>Redux</span>
+              <span>API</span>
+            </div>
+          </div>
+          <div class="container__image">
+            <img src="assets/converter.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="category">
+      <h3 id="contact" class="category__title"><span class=category__title__background>Contact</span></h3>
+      <div class="contact">
+        <div class="contact__links">
+          <a class="contact__links__link" href="mailto:clement.gax@gmail.com"><i class="fas fa-at fa-2x"></i></a>
+          <a class="contact__links__link" href="https://linkedin.com/in/clementgaxotte"><i class="fab fa-linkedin-in fa-2x"></i></a>
+          <a class="contact__links__link" href="https://github.com/ClementGax"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+        <p class="contact__text">Ma boîte de réception est toujours ouverte. Que vous souhaitiez me proposer une nouvelle opportunité, me poser une question, ou simplement dire bonjour, je ferai de mon mieux pour vous répondre rapidement !</p> 
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2020 - Clément GAXOTTE</p>
+    </footer>
+  </body>
+</html>
