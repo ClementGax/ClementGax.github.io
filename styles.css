@@ -1,17 +1,21 @@
 body {
-  max-width: 1000px;
   margin: 0 auto;
-  background-color: #F0F3F4;
   font-family: 'Roboto', sans-serif;
+  background-color: #F0F3F4;
   color: #989A9C;
 }
 
-/* NAVBAR */
+/* HEADER */
+header {
+  height: 100vh;
+  background-color: #313435;
+  color: #F0F3F4;
+}
 .nav {
-  padding: 1rem 0 2rem 0;
+  margin: 0 auto;
+  padding: 1rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
-  color: #313435;
 }
 .nav__logo {
   font-size: 2rem;
@@ -27,22 +31,21 @@ body {
 .nav__links__link:hover, .nav__logo:hover {
   color: #F64652;
 }
-
-/* HEADER */
-header {
-  height: calc(100vh - 80px);
+.carousel {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  margin-top: 45vh;
+  transform: translateY(-50%);
 }
-.header__title {
+.carousel__title {
   font-size: 4rem;
   font-weight: 500;
-  color: #313435;
 }
-.header__subtitle {
+.carousel__subtitle {
+  text-align: center;
   font-size: 1.5rem;
+  color: #989A9C;
   border-right: 2px solid #989A9C;
   white-space: nowrap;
   overflow: hidden; 
@@ -58,6 +61,23 @@ header {
   from{border-right-color:#F64652;}
   to{border-right-color: transparent;}
 }
+@media screen and (max-width: 700px) {
+  .nav__logo {
+    display: none;
+  }
+  .nav__link {
+    display: none;
+  }
+  .nav__links__link {
+    display: none;
+  }
+  .carousel__title {
+    font-size: 2rem;
+  }
+  .carousel__subtitle {
+    font-size: 1rem;
+  }
+} 
 
 /* CATEGORIES */
 .category {
@@ -79,6 +99,9 @@ header {
 }
 
 /* ABOUT */
+.categoryAbout {
+  max-width: 1000px;
+}
 .about {
   display: flex;
   margin-bottom: 2rem;
@@ -111,11 +134,40 @@ header {
 .about__link__button:hover {
   background-color: rgba(246,70,82,0.1);
 }
+@media screen and (max-width: 1100px) {
+  .categoryAbout {
+    max-width: none;
+    margin: 0 4rem 0 4rem;
+  }
+} 
+@media screen and (max-width: 700px) {
+  .categoryAbout {
+    margin: 0 1rem 0 1rem;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about__photo {
+    order: 1;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .about__description {
+    order: 2;
+    padding-right: 0;
+  }
+} 
 
 /* PORTFOLIO */
+.categoryPortfolio {
+  background-color: #989A9C;
+}
+.category__title__portfolio {
+padding-left: calc((100vw - 1020px)/2)
+}
 .container {
   display: flex;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 4rem;
 }
@@ -163,6 +215,7 @@ header {
   text-decoration: underline;
 }
 .container__description__tags span {
+  color: #313435;
   margin-left: 0.5rem;
   font-size: 0.9rem;
 }
@@ -183,8 +236,56 @@ header {
   border-radius: 5px;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 1100px) {
+  .categoryPortfolio {
+    max-width: none;
+    padding: 6rem 4rem 6rem 4rem;
+  }
+  .category__title__portfolio {
+    padding-left: 0;
+  }
+  .container__image, .container__image img {
+    width: 400px;
+    height: 233.3333px;
+  }
+} 
+@media screen and (max-width: 700px) {
+  .categoryPortfolio {
+    padding: 6rem 1rem 6rem 1rem;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .container__image, .container__image img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .container__image {
+    order: 2;
+  }
+  .container__description {
+    left: 0px;
+    margin-right: 0px;
+    order: 1;
+  }
+  .containerReverse__description {
+    margin-right: 0px;
+  }
+  .container__description__tags {
+    margin-bottom: 1rem;
+  }
+  .container__description__tagsReverse span {
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+} 
 
 /* CONTACT */
+.categoryContact {
+  max-width: 1000px;
+}
 .contact__text {
   margin: 0 auto;
   margin-top: 2rem;
@@ -201,9 +302,26 @@ header {
 .contact__links__link:hover {
   color: #F64652;
 }
+@media screen and (max-width: 1100px) {
+  .categoryContact {
+    max-width: none;
+    margin: 0 4rem 0 4rem;
+  }
+} 
+@media screen and (max-width: 700px) {
+  .categoryContact {
+    margin: 0 1rem 0 1rem;
+  }
+  .contact__links__link {
+    margin: 1rem;
+  }
+  .contact__text {
+    width: 100%;
+  }
+} 
 
 /* FOOTER */
-footer p {
+footer {
   font-size: 0.8rem;
   text-align: center;
   padding: 2rem 0;
