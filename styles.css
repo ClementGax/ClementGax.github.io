@@ -214,6 +214,9 @@ padding-left: calc((100vw - 1020px)/2)
 .container__description__text__link:hover {
   text-decoration: underline;
 }
+.container__description__logo__link:hover {
+  color: #F64652;
+}
 .container__description__tags span {
   color: #313435;
   margin-left: 0.5rem;
